@@ -1,16 +1,6 @@
-# Imputation-based Time-Series Anomaly Detection with Conditional Weight-Incremental Diffusion Models
+# Repaint-based Time-Series Anomaly Detection with Conditional Weight-Incremental Diffusion Models
 
-This is an repository hosting the code of our paper:  [Imputation-based Time-Series Anomaly Detection with Conditional Weight-Incremental Diffusion Models](https://github.com/ChunjingXiao/DiffAD/blob/main/KDD_23_DiffAD.pdf), KDD 2023. https://dl.acm.org/doi/abs/10.1145/3580305.3599391
-
-## Citation
-
-@inproceedings{xiao2023imputation,  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title={Imputation-based Time-Series Anomaly Detection with Conditional Weight-Incremental Diffusion Models},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; author={Xiao, Chunjing and Gou, Zehua and Tai, Wenxin and Zhang, Kunpeng and Zhou, Fan},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; booktitle={Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pages={2742--2751},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; year={2023}  
-}
+This code aim to utilize the repainting technique to enhance the effectiveness of the condition-based diffusion model in detecting anomalies within time series data.
 
 ## Datasets
 
@@ -81,12 +71,4 @@ If you need to modify this path, you can refer to "config/smap_time_test.json":
 # Edit json to adjust pretrain model path and dataset_path.
 python time_test.py -c config/smap_time_test.json
 ```
-
-#### RESULT
-The GPU we use is NVIDIA RTX3090 24GB, the training time is about 1 hour, 
-and the test time is about half an hour. 
-The following is the F1-score obtained after testing the SMAP dataset.
-<p align="center">
-<img src=".\pics\result.png" width="500" height = "130" alt="result" align=center />
-</p>
 
